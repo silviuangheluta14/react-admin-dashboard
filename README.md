@@ -13,47 +13,82 @@ password: 123456
 
 ## 📸 Preview
 
+ 📊 Dashboard
+<img src="docs/screenshots/dashboard.png" width="800" />
+
+ 🧾 Orders
+<img src="docs/screenshots/orders.png" width="800" />
+
+ 🛒 Products
+<img src="docs/screenshots/products.png" width="800" />
+
+ 👥 Users & Roles
+<img src="docs/screenshots/users.png" width="800" />
+
+ 🔐 Login & Register
+<img src="docs/screenshots/login.png" width="450" />
+<img src="docs/screenshots/singin.png" width="450" />
+
+ 🚫 Access Control (403 Not Authorized)
+<img src="docs/screenshots/not-authorized.png" width="600" />
+
+ ❓ Custom 404 Page
+<img src="docs/screenshots/notfound.png" width="600" />
 
 ## 🔥 Features
 
-### 🔐 Authentication
+ ## ✨ Features
+
+### 🔐 Authentication & Authorization
 - Firebase Auth (email/password)
-- Login / Register
-- Protected routes
-- Role-based access (admin vs user)
-- Auto-persist session
+- Persistent session
+- Role-based access control (admin / user)
+- Protected routes using React Router
+- Unauthorized fallback (403 page)
+
+### 🧾 Orders Management
+- Live Firestore sync (real-time updates)
+- Add / Edit / Delete orders
+- Order status badges
+- Revenue calculation
+- Last 7 days chart
+
+### 🛒 Products Management
+- CRUD + form validation
+- Stock, price, active state
+- Filtering & searching
 
 ### 👥 User Management
-- Firestore users collection
-- Change roles (user/admin)
-- Enable / disable users
-- Delete user records
-- Filters + search + live updates
-
-### 📦 Product Management
-- Create / edit / delete products
-- Stock, price, categories
-- Validation
-- Firestore live sync
+- Role switching (user/admin)
+- Enable / disable accounts
+- Firestore document deletion
+- Filters & search
+- Demo admin account support
 
 ### 📊 Dashboard
-- Statistics cards (users / products / orders / revenue)
-- Live charts (Recharts)
-- Order status distribution
-- Latest orders table
+- Realtime Firestore stats
+- User / Product / Order counts
+- 7-day revenue chart
+- Order distribution chart
+
+### 🎨 UI / UX
+- Light & Dark mode with theming
+- Fully responsive layout
+- Modern minimalist design
+- Clean reusable components
 
 ### ⚡ Tech Stack
 | Category | Tech |
 |----------|------|
-| UI | React 18 + TypeScript + Vite |
-| State | Zustand |
-| Backend | Firebase Auth + Firestore |
+| UI | React 18 · TypeScript · Vite |
+| State | Zustand (global store) |
+| Backend | Firebase Auth · Firestore (realtime) |
 | Charts | Recharts |
-| Styling | Custom CSS + CSS variables + dark mode |
-| Routing | React Router |
-| Dev Tools | ESLint, Prettier, GitHub |
+| Styling | Custom CSS · CSS variables · Dark/Light mode |
+| Routing | React Router v6 |
+| Deployment | Vercel |
+| Dev Tools | ESLint · Prettier · Git · GitHub |
 
----
 
 ## 🛠️ Project Structure
 
