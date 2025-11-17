@@ -7,10 +7,12 @@ Designed as a real-world portfolio project suitable for full-stack / frontend in
 ## 🚀 Live Demo
 https://react-admin-dashboard-git-main-silviuangheluta14s-projects.vercel.app
 
-## 📸 Preview
-_(add screenshots later)_
+## Admin
+email: admin@admin.com
+password: 123456
 
----
+## 📸 Preview
+
 
 ## 🔥 Features
 
