@@ -5,7 +5,7 @@ A modern admin dashboard built with **React + TypeScript + Vite**, featuring **a
 Designed as a real-world portfolio project suitable for full-stack / frontend interviews.
 
 ## 🚀 Live Demo
-_(optional – will add link after deploy)_
+https://react-admin-dashboard-git-main-silviuangheluta14s-projects.vercel.app
 
 ## 📸 Preview
 _(add screenshots later)_
