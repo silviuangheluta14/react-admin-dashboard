@@ -94,12 +94,24 @@ password: 123456
 
 src/
 ├─ components/
+│  ├─ layout/
+│  └─ StatsCard.tsx
 ├─ pages/
+│  ├─ Dashboard/
+│  ├─ Products/
+│  ├─ Users/
+│  └─ Login.tsx
+├─ routes/
 ├─ utils/
+│  ├─ firebase.ts
+│  ├─ stats.ts
+│  └─ seed.ts
 ├─ store/
+│  ├─ useAuthStore.ts
+│  └─ useThemeStore.ts
 ├─ styles/
+│  └─ globals.css
 └─ App.tsx
-
 
 ## 🧪 Demo Data
 The project includes seeding utilities for development:
