@@ -100,6 +100,7 @@ src/
 ├─ styles/
 └─ App.tsx
 
+
 ## 🧪 Demo Data
 The project includes seeding utilities for development:
 
