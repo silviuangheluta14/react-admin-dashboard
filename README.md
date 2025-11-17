@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# React Admin Dashboard (Firebase + Vite + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern admin dashboard built with **React + TypeScript + Vite**, featuring **authentication, user roles, Firestore CRUD, real-time data updates, charts and theme switching**.
 
-Currently, two official plugins are available:
+Designed as a real-world portfolio project suitable for full-stack / frontend interviews.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+_(optional – will add link after deploy)_
 
-## React Compiler
+## 📸 Preview
+_(add screenshots later)_
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🔥 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🔐 Authentication
+- Firebase Auth (email/password)
+- Login / Register
+- Protected routes
+- Role-based access (admin vs user)
+- Auto-persist session
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 👥 User Management
+- Firestore users collection
+- Change roles (user/admin)
+- Enable / disable users
+- Delete user records
+- Filters + search + live updates
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📦 Product Management
+- Create / edit / delete products
+- Stock, price, categories
+- Validation
+- Firestore live sync
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📊 Dashboard
+- Statistics cards (users / products / orders / revenue)
+- Live charts (Recharts)
+- Order status distribution
+- Latest orders table
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ⚡ Tech Stack
+| Category | Tech |
+|----------|------|
+| UI | React 18 + TypeScript + Vite |
+| State | Zustand |
+| Backend | Firebase Auth + Firestore |
+| Charts | Recharts |
+| Styling | Custom CSS + CSS variables + dark mode |
+| Routing | React Router |
+| Dev Tools | ESLint, Prettier, GitHub |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Project Structure
+
+src/
+├─ components/
+├─ pages/
+├─ utils/
+├─ store/
+├─ styles/
+└─ App.tsx
+
+## 🧪 Demo Data
+The project includes seeding utilities for development:
+
+```ts
+import { seedProducts, seedUsers } from './utils/seed';
+
+// seedProducts(20);
+// seedUsers(10);
